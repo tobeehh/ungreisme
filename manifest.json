@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Ungreis Me!",
+  "version": "1.0",
+  "description": "Blendet Artikel von Friedhelm Greis auf golem.de aus.",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "webRequest",
+    "webRequestBlocking"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.golem.de/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
